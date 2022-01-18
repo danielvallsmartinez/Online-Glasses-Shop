@@ -1,0 +1,295 @@
+:root {
+    --first-color: #71ab81;
+    --second-color: #bd635e;
+    --third-color: #c4b964;
+}
+
+
+.glasses1 {
+    grid-area: glasses1;
+    justify-self: center;
+    width: 250px;
+}
+
+.name {
+    grid-area: name;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.price {
+    grid-area: price;
+    text-align: right;
+}
+
+.box1 {
+    display: grid;
+    grid-template-areas:
+    'glasses1 glasses1'
+    'name price';
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--first-color);
+    border-radius: 47px;
+    
+    background-image: url(../Media/Ellipse1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    
+
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.box1:hover {
+   box-shadow: 5px 10px 18px var(--first-color);
+}
+
+.glasses2 {
+    grid-area: glasses2;
+    text-align: center;
+}
+
+
+.box2 {
+    display: grid;
+    grid-template-areas:
+    'glasses2 glasses2'
+    'name price';
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--second-color);
+    border-radius: 47px;
+
+    background-image: url(../Media/Ellipse.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+
+
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.box2:hover {
+    box-shadow: 5px 10px 18px var(--second-color);
+}
+
+.glasses3 {
+    grid-area: glasses3;
+    text-align: center;
+}
+
+
+.box3 {
+    display: grid;
+    grid-template-areas:
+    'glasses3 glasses3'
+    'name price';
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color:var(--third-color);
+    border-radius: 47px;
+
+    background-image: url(../Media/Ellipse2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.box3:hover {
+    box-shadow: 5px 10px 18px var(--third-color);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    padding: 0;
+    margin: 0; 
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.flex-container {
+    
+}
+
+.footer {
+    background-color:#C4C4C4;
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    overflow: scroll;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    bottom: 100px;
+}
+
+.icon1 {
+    fill:#888585;
+    justify-self: center;
+    align-self: center;
+}
+.icon2 {
+    fill:#E56D29;
+    justify-self: center;
+    align-self: center;
+}
+.icon3 {
+    fill:#888585;
+    justify-self: center;
+    align-self: center;
+}
+.icon4 {
+    fill:#888585;
+    justify-self: center;
+    align-self: center;
+}
+
+.mobile-options {
+    display: grid;
+    grid-template-areas:
+    'icon1 icon2 icon3 icon4';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    align-self: center;
+    border-radius: 47px;
+}
+
+
+@media all and (min-width: 600px) {
+    
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .box1 {
+        display: grid;
+        grid-template-areas:
+        'glasses1 glasses1'
+        'name price';
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        
+        padding: 10px;
+        padding-top: 30px;
+        padding-left: 4%;
+        padding-right: 4%;
+        background-color: var(--first-color);
+        border-radius: 47px;
+    
+        background-image: url(../Media/Ellipse1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+
+        margin-top: 30px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .box2 {
+        display: grid;
+        grid-template-areas:
+        'glasses2 glasses2'
+        'name price';
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        
+        padding: 10px;
+        padding-top: 30px;
+        padding-left: 4%;
+        padding-right: 4%;
+        background-color: var(--second-color);
+        border-radius: 47px;
+
+        background-image: url(../Media/Ellipse.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+    
+        margin-top: 30px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .box3 {
+        display: grid;
+        grid-template-areas:
+        'glasses3 glasses3'
+        'name price';
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        
+        padding: 10px;
+        padding-top: 30px;
+        padding-left: 4%;
+        padding-right: 4%;
+        background-color:var(--third-color);
+        border-radius: 47px;
+
+        background-image: url(../Media/Ellipse2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+
+        margin-top: 30px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .mobile-options {
+        visibility: hidden;
+    }
+
+    main {
+        overflow: scroll;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        bottom: 0px;
+    }
+    
+}

@@ -1,0 +1,273 @@
+.title { 
+    grid-area: title;
+    color: #808080;
+}
+.adress { 
+    grid-area: adress;
+    font-size: 17px;
+    font-weight: 700;
+    color: #808080;
+ }
+.adresstxt { 
+    grid-area: adresstxt; 
+    font-size: 17px;
+    font-weight: 300;
+    background-color: lightgrey;
+    height: 50px;
+    border-radius: 47px; /*redondea los vertices*/
+    color: #808080;
+    padding-left: 20px;
+    border: none;
+    outline: none; /*quita el borde al seleccionar*/
+}
+.shipping { 
+    grid-area: shipping; 
+    font-size: 17px;
+    font-weight: 700;
+    color: #808080;
+}
+.shippingtxt { 
+    grid-area: shippingtxt;
+    font-size: 17px; 
+    font-weight: 300;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 47px;
+    color: #808080;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+}
+.payment { 
+    grid-area: payment; 
+    font-size: 17px;
+    font-weight: 700;
+    color: #808080;
+}
+.visa { 
+    grid-area: visa;
+    text-align: right;
+    border-radius: 47px;
+}
+.paypal { 
+    grid-area: paypal; 
+    border-radius: 47px;
+}
+.total {
+    grid-area: total; 
+    font-size: 17px;
+    font-weight: 700;
+    text-align: right;
+    color: #808080;
+}
+.euros {
+    grid-area: euros;
+    font-weight: 300;
+    font-size: 24px;
+    color: #808080;
+    text-align: center;
+    background-color: lightgrey; 
+    border-radius: 47px; 
+}
+.button { 
+    grid-area: complete;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #E66D29;
+    border-radius: 47px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #93471C;
+}
+
+.form {
+  display: grid;
+  grid-template-areas:
+    'title title'
+    'adress adress'
+    'adresstxt adresstxt'
+    'shipping shipping'
+    'shippingtxt shippingtxt'
+    'payment payment'
+    'visa paypal'
+    'total euros'
+    'complete complete';
+    grid-gap: 10px;
+    grid-row-gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-column-gap: 50px;
+
+  background-color: white;
+  border-radius: 47px;
+}
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:white;
+    display: grid;
+    grid-template-rows: 0 auto 50;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba 0000, 0.57;
+}
+
+.footer {
+    background-color:#C4C4C4;
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+main {
+    overflow: scroll;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    bottom: 100px;
+}
+
+.icon1 {
+    fill:#888585;
+    justify-self: center;
+    align-self: center;
+}
+.icon2 {
+    fill:#E56D29;
+    justify-self: center;
+    align-self: center;
+}
+.icon3 {
+    fill:#888585;
+    justify-self: center;
+    align-self: center;
+}
+.icon4 {
+    fill:#888585;
+    justify-self: center;
+    align-self: center;
+}
+
+.mobile-options {
+    display: grid;
+    grid-template-areas:
+    'icon1 icon2 icon3 icon4';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    align-self: center;
+    border-radius: 47px;
+}
+
+
+@media all and (min-width: 600px) {
+
+    .form {
+        display: grid;
+        grid-template-areas:
+          'title title title title title'
+          'adress adress adresstxt adresstxt adresstxt'
+          'shipping shipping shippingtxt shippingtxt shippingtxt'
+          'payment payment visa paypal paypal '
+          'total total euros euros euros'
+          'complete complete complete complete complete';
+        grid-template-columns: 20% auto auto auto 50%;
+        grid-template-rows: 10 10 10 10 20 20;
+        grid-gap: 10px;
+        grid-row-gap: 30px;
+        padding: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 5vh;
+        margin-top: 5vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        background-color: white;
+        border-radius: 47px;
+    }
+
+    .title { 
+        grid-area: title; 
+        text-align: center;
+        color: #808080;
+    }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #E4B080;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 0 auto 50;
+        height: 100vh;
+    }
+
+    .total {
+        grid-area: total; 
+        font-size: 17px;
+        font-weight: 700;
+        color: #808080;
+        text-align: left;
+    }
+
+    .visa { 
+        grid-area: visa;
+        text-align: left;
+        border-radius: 47px;
+    }
+
+    ::-webkit-input-placeholder {
+        color:transparent;
+    }
+
+    .mobile-options {
+        visibility: hidden;
+    }
+
+    main {
+        overflow-y: auto;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        bottom: 0px;
+    }
+
+    .footer {
+        background-color:#C4C4C4;
+        text-align: center;
+        padding: 0;
+        margin-top: 11px;
+        margin-bottom: 0px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
